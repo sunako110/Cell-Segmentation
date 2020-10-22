@@ -23,9 +23,9 @@ The ground truth data are obtained using ImageJ. Macro script was used to genera
 
 The table shows the segmentation result for cells in different passages. As you can see, segmentation result is much better when there is high contrast between cells and background. 
 
-| Passage Number| Original                                     | Segmentation                                |
-| ------------- |:--------------------------------------------:| -------------------------------------------:|
-| P2            |<img src="testset_original/test/P2-7.tif" width="512" height="384">|<img src="results/mask/P2-7_predict.png" width="512" height="384">|
-| P6            |![alt text](testset_original/test/P6-4.tif)|<img src="results/mask/P6-4_predict.png" width="512" height="384">|
-| P7            |![alt text](testset_original/test/P7-1.tif)|<img src="results/mask/P7-1_predict.png" width="512" height="384">|
+| Passage Number| Original                                           | Segmentation                                                     |
+| ------------- |:--------------------------------------------------:| ----------------------------------------------------------------:|
+| P2            |<img src="readme/P2-7.png" width="256" height="192">|<img src="results/mask/P2-7_predict.png" width="256" height="192">|
+| P6            |<img src="readme/P6-4.png" width="256" height="192">|<img src="results/mask/P6-4_predict.png" width="256" height="192">|
+| P7            |<img src="readme/P7-1.png" width="256" height="192">|<img src="results/mask/P7-1_predict.png" width="256" height="192">|
 
