@@ -13,9 +13,9 @@ The cropped dataset for cells with each passage number is divided so that 80\% o
 
 ** Here, we provid the training data and validation data (along with corresponding ground truth data) in their original size (1024x768) because cropped dataset has a large file number which is not allowed when uploading to Github. **
 
-[Training Data](../trainingset_original)
+[Training Data](trainingset_original)
 
-[Validation Data](../testset_original)
+[Validation Data](testset_original)
 
 The ground truth data are obtained using ImageJ. Macro script was used to generate a batch of segmentation images at once. The original images are first converted into 8-bit grayscale images and segmented using ImageJ thresholding operation. Since the pixel value range varies significantly between images taken in different cell generations, threshold values need to be changed for these images. It was observed that thresholding method may not be enough for generate good true values of masks. For example, the core of segmented cells may be black (having pixel values of 0) after thresholding. Hence “Fill Holes” and “Watershed” operations are applied for supplement. They make the segmented cells more solid and separate the cells which are next to each other.
 
@@ -25,7 +25,7 @@ The table shows the segmentation result for cells in different passages. As you 
 
 | Passage Number| Original                                     | Segmentation                                |
 | ------------- |:--------------------------------------------:| -------------------------------------------:|
-| P2            |![alt text](../testset_original/test/P2-7.tif)|![alt text](../results/mask/P2-7_predict.png)|
-| P6            |![alt text](../testset_original/test/P6-4.tif)|![alt text](../results/mask/P6-4_predict.png)|
-| P7            |![alt text](../testset_original/test/P7-1.tif)|![alt text](../results/mask/P7-1_predict.png)|
+| P2            |<img src="testset_original/test/P2-7.tif" width="512" height="384">|<img src="results/mask/P2-7_predict.png" width="512" height="384">|
+| P6            |![alt text](testset_original/test/P6-4.tif)|<img src="results/mask/P6-4_predict.png" width="512" height="384">|
+| P7            |![alt text](testset_original/test/P7-1.tif)|<img src="results/mask/P7-1_predict.png" width="512" height="384">|
 
