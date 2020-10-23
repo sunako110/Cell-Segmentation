@@ -11,7 +11,7 @@ The dataset (provided by Tsinghua Yangtze Delta Research Institute) consists of 
 The U-Net architecture we use for this project takes input images with sizes 256x256. In order to obtain more accurate cell segmentation results, the images in original dataset are cropped into 256x256 patches. This is also to prevent distortion of the cell images during data augmentation. During augmentation, if the images were in their original sizes, they would be resized into 256x256 hence producing a result dataset with lower qualities and distorted shapes which could not match with original dataset. 
 The cropped dataset for cells with each passage number is divided so that 80\% of it becomes training data and 20\% becomes validation data. The same data split is also applied to their corresponding ground truth data, which consists of the segmentation images (masks). 
 
-** Here, we provid the training data and validation data (along with corresponding ground truth data) in their original size (1024x768) because cropped dataset has a large file number which is not allowed when uploading to Github. **
+Here, we provid the training data and validation data (along with corresponding ground truth data) in their original size (1024x768) because cropped dataset has a large file number which is not allowed when uploading to Github.
 
 [Training Data](trainingset_original)
 
